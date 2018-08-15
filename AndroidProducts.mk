@@ -15,6 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rk3399.mk \
-    $(LOCAL_DIR)/rk3399_mid.mk \
     $(LOCAL_DIR)/rk3399pro.mk
