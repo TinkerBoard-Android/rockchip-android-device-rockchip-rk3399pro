@@ -123,3 +123,5 @@ BOARD_USE_ANDROIDNN := true
 ifeq ($(strip $(BOARD_USE_ANDROIDNN)), true)
 DEVICE_MANIFEST_FILE := device/rockchip/$(TARGET_BOARD_PLATFORM)/manifest.xml
 endif
+
+SCAN_EXCLUDE_DIRS := npu
