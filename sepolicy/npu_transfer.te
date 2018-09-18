@@ -1,0 +1,7 @@
+type npu_transfer_proxy, domain;
+type npu_transfer_proxy_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(npu_transfer_proxy)
+
+allow npu_transfer_proxy usb_device:dir r_dir_perms;
+allow npu_transfer_proxy usb_device:chr_file rw_file_perms;
+
