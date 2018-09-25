@@ -186,6 +186,7 @@
         <version>1.0</version>
         <interface>
             <name>IDevice</name>
+            <instance>ovx</instance>
             <instance>armnn</instance>
         </interface>
     </hal>

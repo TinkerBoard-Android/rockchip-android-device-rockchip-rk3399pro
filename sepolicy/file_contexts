@@ -1,5 +1,6 @@
 # default hal
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.0-service-armnn   u:object_r:hal_neuralnetworks_armnn_exec:s0
+/vendor/bin/hw/android\.hardware\.neuralnetworks@1\.0-service-ovx   u:object_r:hal_neuralnetworks_armnn_exec:s0
 /vendor/bin/upgrade_tool   u:object_r:upgrade_tool_exec:s0
 
 #for androidNN

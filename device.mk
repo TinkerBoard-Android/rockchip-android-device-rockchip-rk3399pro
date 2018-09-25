@@ -49,6 +49,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/rockchip/rk3399pro/armnn/bin,$(TARGET_COPY_OUT_VENDOR)/etc/armnn/bin)
+
+# OVX
+PRODUCT_COPY_FILES += \
+    device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.0-service-ovx.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.0-service-ovx.rc \
+    device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.0-service-ovx:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.0-service-ovx
 endif
 
 # setup dalvik vm configs.
