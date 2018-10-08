@@ -56,6 +56,9 @@ PRODUCT_COPY_FILES += \
     device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.0-service-ovx:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.0-service-ovx
 endif
 
+$(call inherit-product-if-exists, hardware/rockchip/upgrade_tool/npu_upgrade.mk)
+$(call inherit-product-if-exists, hardware/rockchip/npu_transfer/npu_transfer.mk)
+
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 

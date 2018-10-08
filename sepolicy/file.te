@@ -1,1 +1,2 @@
 type sysfs_armnn, fs_type, sysfs_type, mlstrustedobject;
+type debugfs_clk_wifi_pmu, debugfs_type, fs_type;

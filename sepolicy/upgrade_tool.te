@@ -1,3 +1,0 @@
-type upgrade_tool, domain;
-type upgrade_tool_exec, exec_type, vendor_file_type, file_type;
-init_daemon_domain(upgrade_tool)

@@ -1,0 +1,2 @@
+genfscon debugfs /clk/clk_wifi_pmu/clk_rate u:object_r:debugfs_clk_wifi_pmu:s0
+genfscon debugfs /clk/clk_wifi_pmu/clk_enable_count u:object_r:debugfs_clk_wifi_pmu:s0

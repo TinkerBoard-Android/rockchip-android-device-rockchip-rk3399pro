@@ -1,0 +1,9 @@
+type npu_upgrade, domain;
+type npu_upgrade_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(npu_upgrade)
+
+allow npu_upgrade vendor_file:file { execute getattr read execute_no_trans };
+allow npu_upgrade shell_exec:file { read getattr };
+allow npu_upgrade usb_device:dir { read };
+allow npu_upgrade device:dir { read };
+allow npu_upgrade debugfs_clk_wifi_pmu:file rw_file_perms;
