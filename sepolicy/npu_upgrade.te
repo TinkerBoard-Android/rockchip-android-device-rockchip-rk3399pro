@@ -4,6 +4,16 @@ init_daemon_domain(npu_upgrade)
 
 allow npu_upgrade vendor_file:file { execute getattr read execute_no_trans };
 allow npu_upgrade shell_exec:file { read getattr };
-allow npu_upgrade usb_device:dir { read };
-allow npu_upgrade device:dir { read };
-allow npu_upgrade debugfs_clk_wifi_pmu:file rw_file_perms;
+allow npu_upgrade device:dir { open read };
+allow npu_upgrade npu_upgrade_exec:file { execute_no_trans };
+allow npu_upgrade upgrade_tool_exec:file { execute_no_trans };
+
+allow npu_upgrade tmpfs:file { open ioctl };
+allow npu_upgrade npu_upgrade:netlink_kobject_uevent_socket { setopt bind create read };
+allow npu_upgrade system_file:file { open read getattr execute execute_no_trans};
+
+allow npu_upgrade usb_device:dir { open read };
+allow npu_upgrade usb_device:chr_file { open read write ioctl};
+allow npu_upgrade sysfs_bus_usb:dir { open read search};
+allow npu_upgrade sysfs_plat_usb:file { open read getattr };
+
