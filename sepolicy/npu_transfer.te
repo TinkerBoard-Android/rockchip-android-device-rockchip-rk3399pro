@@ -4,4 +4,9 @@ init_daemon_domain(npu_transfer_proxy)
 
 allow npu_transfer_proxy usb_device:dir r_dir_perms;
 allow npu_transfer_proxy usb_device:chr_file rw_file_perms;
+allow npu_transfer_proxy npu_transfer_proxy:tcp_socket { create connect getopt setopt read write };
+allow npu_transfer_proxy npu_transfer_proxy:capability { net_raw };
+allow npu_transfer_proxy port:tcp_socket { name_connect };
+allow npu_transfer_proxy fwmarkd_socket:sock_file { write };
+allow npu_transfer_proxy init:unix_stream_socket { connectto };
 
