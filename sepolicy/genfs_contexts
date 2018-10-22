@@ -52,9 +52,19 @@ genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/busnum   		u:object_r:sysfs_plat_usb:s0
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/speed   		u:object_r:sysfs_plat_usb:s0
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/descriptors  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/devnum   		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/busnum   		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/speed   		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/descriptors  		u:object_r:sysfs_plat_usb:s0
 
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/devnum   		u:object_r:sysfs_plat_usb:s0
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/busnum   		u:object_r:sysfs_plat_usb:s0
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/speed   		u:object_r:sysfs_plat_usb:s0
 genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/descriptors  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/devnum   		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/busnum   		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/speed   		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/descriptors  		u:object_r:sysfs_plat_usb:s0
