@@ -16,4 +16,6 @@ allow npu_upgrade usb_device:dir { open read };
 allow npu_upgrade usb_device:chr_file { open read write ioctl};
 allow npu_upgrade sysfs_bus_usb:dir { open read search};
 allow npu_upgrade sysfs_plat_usb:file { open read getattr };
+allow npu_upgrade debugfs_clk_wifi_pmu:file { open read write getattr };
+allow npu_upgrade sysfs_class_gpio:file { open read write getattr };
 
