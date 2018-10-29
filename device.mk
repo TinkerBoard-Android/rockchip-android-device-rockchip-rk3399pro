@@ -24,6 +24,9 @@ PRODUCT_PACKAGES += \
     displayd \
     libion
 
+PRODUCT_PACKAGES += \
+    npu_powerctrl
+
 #enable this for support f2fs with data partion
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
