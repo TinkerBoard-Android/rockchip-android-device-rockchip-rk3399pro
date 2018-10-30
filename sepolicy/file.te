@@ -2,3 +2,4 @@ type sysfs_armnn, fs_type, sysfs_type, mlstrustedobject;
 type debugfs_clk_wifi_pmu, debugfs_type, fs_type;
 type sysfs_plat_usb, sysfs_type, fs_type;
 type sysfs_bus_usb, sysfs_type, fs_type;
+type sysfs_class_gpio, sysfs_type, fs_type;
