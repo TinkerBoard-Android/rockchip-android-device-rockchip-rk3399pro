@@ -45,7 +45,7 @@ DEVICE=`get_build_var TARGET_PRODUCT`
 BUILD_VARIANT=`get_build_var TARGET_BUILD_VARIANT`
 UBOOT_DEFCONFIG=rk3399pro_defconfig
 KERNEL_DEFCONFIG=rockchip_defconfig
-KERNEL_DTS=rk3399pro-evb-v10
+KERNEL_DTS=rk3399pro-evb-v11
 PACK_TOOL_DIR=RKTools/linux/Linux_Pack_Firmware
 IMAGE_PATH=rockdev/Image-$TARGET_PRODUCT
 export PROJECT_TOP=`gettop`
@@ -61,7 +61,7 @@ export STUB_PATCH_PATH=$STUB_PATH/PATCHES
 
 # build uboot
 echo "start build uboot"
-cd u-boot && make distclean && make $UBOOT_DEFCONFIG && ./mkv8.sh && cd -
+cd u-boot && make distclean && ./make.sh rk3399pro && cd -
 if [ $? -eq 0 ]; then
     echo "Build uboot ok!"
 else
