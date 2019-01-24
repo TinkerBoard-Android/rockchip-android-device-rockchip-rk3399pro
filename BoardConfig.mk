@@ -34,6 +34,8 @@ TARGET_2ND_CPU_VARIANT := cortex-a15
 TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
 PRODUCT_PACKAGE_OVERLAYS += device/rockchip/rk3399pro/overlay
 
+BOARD_AVB_ENABLE := false
+BOARD_CAMERA_SUPPORT_EXT := true
 
 # Disable emulator for "make dist" until there is a 64-bit qemu kernel
 BUILD_EMULATOR := false

@@ -38,9 +38,29 @@ ifeq ($(HOST_OS),linux)
   TARGET_USERIMAGES_USE_F2FS := true
 endif
 
+ifeq ($(BOARD_CAMERA_SUPPORT),true)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.rk3399pro.rc:root/init.rk3399pro.rc \
-    $(LOCAL_PATH)/init.rk30board.usb.rc:root/init.rk30board.usb.rc \
+    frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
+    frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml
+
+PRODUCT_PACKAGES += \
+    librkisp_aec \
+    librkisp_awb \
+    librkisp_af
+endif
+
+ifeq ($(BOARD_CAMERA_SUPPORT_EXT),true)
+PRODUCT_COPY_FILES += \
+    device/rockchip/$(TARGET_BOARD_PLATFORM)/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml \
+    frameworks/native/data/etc/android.hardware.camera.external.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.external.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-external-service
+endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.rk3399pro.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk3399pro.rc \
+    $(LOCAL_PATH)/init.rk30board.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.rk30board.usb.rc \
     $(LOCAL_PATH)/wake_lock_filter.xml:system/etc/wake_lock_filter.xml \
     device/rockchip/rk3399pro/package_performance.xml:$(TARGET_COPY_OUT_OEM)/etc/package_performance.xml \
     device/rockchip/$(TARGET_BOARD_PLATFORM)/media_profiles_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
@@ -78,7 +98,7 @@ ifeq ($(strip $(PRODUCT_HAVE_OPTEE)),true)
 #rkss
 PRODUCT_PROPERTY_OVERRIDES += ro.tee.storage=rkss
 PRODUCT_COPY_FILES += \
-       device/rockchip/common/init.optee_verify.rc:root/init.optee.rc
+       device/rockchip/common/init.optee_verify.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.optee.rc
 endif
 
 PRODUCT_COPY_FILES += \
@@ -106,7 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.rk.def_brightness=200 \
                 ro.rk.homepage_base=http://www.google.com/webhp?client={CID}&amp;source=android-home \
                 ro.rk.install_non_market_apps=false \
-                sys.hwc.compose_policy=6 \
+                vendor.hwc.compose_policy=6 \
                 sys.wallpaper.rgb565=0 \
                 sf.power.control=2073600 \
                 sys.rkadb.root=0 \
