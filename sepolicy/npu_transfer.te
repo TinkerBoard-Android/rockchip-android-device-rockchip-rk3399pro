@@ -18,5 +18,8 @@ allow npu_transfer_proxy vendor_file:file { execute_no_trans };
 allow npu_transfer_proxy sysfs_class_gpio:file { open read write};
 allow npu_transfer_proxy debugfs_clk_wifi_pmu:file { open read write};
 allow npu_transfer_proxy sysfs_wake_lock:file { open read write};
-allow npu_transfer_proxy npu_transfer_proxy:capability { dac_override };
+
+# allow npu_transfer_proxy npu_transfer_proxy:capability { dac_override };
+dontaudit npu_transfer_proxy self:capability { dac_override };
+
 allow npu_transfer_proxy npu_transfer_proxy:capability2 { block_suspend };
