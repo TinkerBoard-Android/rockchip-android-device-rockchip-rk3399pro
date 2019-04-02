@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     libion
 
 PRODUCT_PACKAGES += \
-    npu_powerctrl
+    npu_powerctrl \
+    npu_monitor
 PRODUCT_COPY_FILES += \
     hardware/rockchip/npu_powerctrl/npu_powerctrl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/npu_powerctrl.rc
 
