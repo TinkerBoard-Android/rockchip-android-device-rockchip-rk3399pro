@@ -98,7 +98,7 @@ BOARD_TEMPERATURE_SENSOR_SUPPORT := false
 BOARD_USB_HOST_SUPPORT := true
 
 #for optee support
-PRODUCT_HAVE_OPTEE ?= false
+PRODUCT_HAVE_OPTEE ?= true
 BOARD_USE_SPARSE_SYSTEM_IMAGE := true
 
 # Google Service and frp overlay
@@ -121,7 +121,7 @@ BOARD_SUPPORT_VP6 := false
 CAMERA_SUPPORT_AUTOFOCUS=true
 
 # ANDROIDNN
-BOARD_USE_ANDROIDNN := true
+BOARD_USE_ANDROIDNN := false
 ifeq ($(strip $(BOARD_USE_ANDROIDNN)), true)
 DEVICE_MANIFEST_FILE := device/rockchip/$(TARGET_BOARD_PLATFORM)/manifest.xml
 endif
