@@ -70,17 +70,17 @@ PRODUCT_COPY_FILES += \
 ifeq ($(strip $(BOARD_USE_ANDROIDNN)), true)
 # ARMNN
 PRODUCT_COPY_FILES += \
-    device/rockchip/rk3399pro/armnn/android.hardware.neuralnetworks@1.0-service-armnn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.0-service-armnn.rc \
-    device/rockchip/rk3399pro/armnn/android.hardware.neuralnetworks@1.0-service-armnn:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.0-service-armnn \
+    device/rockchip/rk3399pro/armnn/android.hardware.neuralnetworks@1.1-service-armnn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.1-service-armnn.rc \
+    device/rockchip/rk3399pro/armnn/android.hardware.neuralnetworks@1.1-service-armnn:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.1-service-armnn \
     device/rockchip/rk3399pro/armnn/tuned_data:$(TARGET_COPY_OUT_VENDOR)/etc/armnn/tuned_data
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/rockchip/rk3399pro/armnn/bin,$(TARGET_COPY_OUT_VENDOR)/etc/armnn/bin)
 
 # OVX
-PRODUCT_COPY_FILES += \
-    device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.0-service-ovx.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.0-service-ovx.rc \
-    device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.0-service-ovx:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.0-service-ovx
+#PRODUCT_COPY_FILES += \
+#    device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.0-service-ovx.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.0-service-ovx.rc \
+#    device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.0-service-ovx:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.0-service-ovx
 endif
 
 $(call inherit-product-if-exists, hardware/rockchip/upgrade_tool/npu_upgrade.mk)
