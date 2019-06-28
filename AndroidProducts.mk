@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rk3399pro.mk
+    $(LOCAL_DIR)/rk3399pro.mk \
+    $(LOCAL_DIR)/rk3399pro_pcie.mk
