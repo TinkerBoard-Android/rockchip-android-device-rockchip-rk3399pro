@@ -128,4 +128,4 @@ else
 DEVICE_MANIFEST_FILE := device/rockchip/$(TARGET_BOARD_PLATFORM)/manifest.xml
 endif
 
-SCAN_EXCLUDE_DIRS := buildroot/output/rockchip_rk3399pro-npu/build/host-e2fsprogs-1.43.9/
+SCAN_EXCLUDE_DIRS := npu

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
-include device/rockchip/rk3399pro/BoardConfig.mk
+include device/rockchip/rk3399pro/rk3399pro_pcie/BoardConfig.mk
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/rockchip/rk3399pro/device.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
