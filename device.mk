@@ -110,6 +110,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/dptx.bin:root/lib/firmware/rockchip/dptx.bin
 
+ifeq ($(PRODUCT_NAME),rk3399pro)
+PRODUCT_PROPERTY_OVERRIDES += \
+		npu.inactivity.sleep.secs=15
+endif
+
 #
 #add Rockchip properties here
 #
@@ -148,5 +153,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.sf.lcd_density=280 \
                 ro.build.shutdown_timeout=6 \
 		persist.enable_task_snapshots=false \
-		npu.inactivity.sleep.secs=15 \
 		ro.product.version = v1.2.0
