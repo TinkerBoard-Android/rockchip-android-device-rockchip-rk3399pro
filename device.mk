@@ -110,7 +110,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/dptx.bin:root/lib/firmware/rockchip/dptx.bin
 
-ifeq ($(PRODUCT_NAME),rk3399pro)
+ifeq ($(TARGET_PRODUCT),rk3399pro)
 PRODUCT_PROPERTY_OVERRIDES += \
 		npu.inactivity.sleep.secs=15
 endif
