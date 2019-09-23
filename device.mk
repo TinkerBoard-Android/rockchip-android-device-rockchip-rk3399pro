@@ -83,6 +83,9 @@ PRODUCT_COPY_FILES += \
     device/rockchip/rk3399pro/ovx/android.hardware.neuralnetworks@1.1-service-ovx:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.1-service-ovx
 endif
 
+#adb for npu
+PRODUCT_COPY_FILES += device/rockchip/rk3399pro/adb_arm:$(TARGET_COPY_OUT_VENDOR)/bin/adb_arm
+
 $(call inherit-product-if-exists, hardware/rockchip/upgrade_tool/npu_upgrade.mk)
 $(call inherit-product-if-exists, hardware/rockchip/npu_transfer/npu_transfer.mk)
 
