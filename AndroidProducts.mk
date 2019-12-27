@@ -16,4 +16,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/rk3399pro.mk \
-    $(LOCAL_DIR)/rk3399pro_pcie.mk
+    $(LOCAL_DIR)/rk3399pro_pcie.mk \
+    $(LOCAL_DIR)/rk3399pro_pcie_v14.mk \
+    $(LOCAL_DIR)/rk3399pro_usb3_v14.mk

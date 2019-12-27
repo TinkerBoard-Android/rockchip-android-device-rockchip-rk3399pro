@@ -21,3 +21,7 @@ add_lunch_combo rk3399pro-userdebug
 add_lunch_combo rk3399pro-user
 add_lunch_combo rk3399pro_pcie-userdebug
 add_lunch_combo rk3399pro_pcie-user
+add_lunch_combo rk3399pro_usb3_v14-userdebug
+add_lunch_combo rk3399pro_usb3_v14-user
+add_lunch_combo rk3399pro_pcie_v14-userdebug
+add_lunch_combo rk3399pro_pcie_v14-user
