@@ -43,8 +43,8 @@ export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 # source environment and chose target product
 DEVICE=`get_build_var TARGET_PRODUCT`
 BUILD_VARIANT=`get_build_var TARGET_BUILD_VARIANT`
-UBOOT_DEFCONFIG=tinker_edge_r_defconfig
-KERNEL_DEFCONFIG=tinker_edge_r_defconfig
+UBOOT_DEFCONFIG=rk3399pro_defconfig
+KERNEL_DEFCONFIG=rockchip_defconfig
 #Temporarily hardcode this to rk3399pro-tinker_edge_r-avb
 #KERNEL_DTS=`get_build_var TARGET_BUILD_DTB`
 KERNEL_DTS=rk3399pro-tinker_edge_r-avb
@@ -63,7 +63,7 @@ export STUB_PATCH_PATH=$STUB_PATH/PATCHES
 
 # build uboot
 echo "start build uboot"
-cd u-boot && make distclean && ./make.sh tinker_edge_r && cd -
+cd u-boot && make distclean && ./make.sh rk3399pro && cd -
 if [ $? -eq 0 ]; then
     echo "Build uboot ok!"
 else
