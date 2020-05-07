@@ -45,9 +45,7 @@ DEVICE=`get_build_var TARGET_PRODUCT`
 BUILD_VARIANT=`get_build_var TARGET_BUILD_VARIANT`
 UBOOT_DEFCONFIG=rk3399pro_defconfig
 KERNEL_DEFCONFIG=rockchip_defconfig
-#Temporarily hardcode this to rk3399pro-tinker_edge_r-avb
-#KERNEL_DTS=`get_build_var TARGET_BUILD_DTB`
-KERNEL_DTS=rk3399pro-tinker_edge_r-avb
+KERNEL_DTS=`get_build_var TARGET_BUILD_DTB`
 PACK_TOOL_DIR=RKTools/linux/Linux_Pack_Firmware
 IMAGE_PATH=rockdev/Image-$TARGET_PRODUCT
 export PROJECT_TOP=`gettop`
