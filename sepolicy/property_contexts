@@ -1,0 +1,3 @@
+npu.inactivity.sleep.secs                 u:object_r:vendor_default_prop:s0
+sys.nn.npu.version	                  u:object_r:vendor_armnn_prop:s0
+sys.nn.gpu.version	                  u:object_r:vendor_armnn_prop:s0

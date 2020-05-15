@@ -31,5 +31,7 @@ allow hal_neuralnetworks_armnn untrusted_app_25:fd { use };
 allow hal_neuralnetworks_armnn untrusted_app:fd { use };
 allow hal_neuralnetworks_armnn platform_app:fd { use };
 allow hal_neuralnetworks_armnn system_app:fd { use };
+allow hal_neuralnetworks_armnn sysfs_dev:file { open read getattr };
 
 allow hal_neuralnetworks_armnn app_data_file:file { read };
+set_prop(hal_neuralnetworks_armnn,vendor_armnn_prop);
