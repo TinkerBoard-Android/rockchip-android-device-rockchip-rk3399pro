@@ -129,4 +129,8 @@ else
 DEVICE_MANIFEST_FILE := device/rockchip/$(TARGET_BOARD_PLATFORM)/manifest.xml
 endif
 
-SCAN_EXCLUDE_DIRS ?= npu
+BOARD_SEPOLICY_DIRS := \
+	device/rockchip/common/sepolicy/vendor \
+	device/rockchip/$(TARGET_BOARD_PLATFORM)/sepolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR := \
+	device/rockchip/common/sepolicy/private
