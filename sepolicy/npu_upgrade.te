@@ -3,6 +3,7 @@ type npu_upgrade_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(npu_upgrade)
 
 allow npu_upgrade vendor_file:file { execute getattr read execute_no_trans };
+allow npu_upgrade vendor_toolbox_exec:file { execute getattr read execute_no_trans };
 allow npu_upgrade shell_exec:file { read getattr };
 allow npu_upgrade device:dir { open read };
 allow npu_upgrade npu_upgrade_exec:file { execute_no_trans };
@@ -12,6 +13,7 @@ dontaudit npu_upgrade self:capability { dac_override };
 
 allow npu_upgrade npu_upgrade:capability2 { block_suspend };
 allow npu_upgrade upgrade_tool_exec:file { execute_no_trans };
+allow npu_upgrade npu_powerctrl_exec:file { execute_no_trans };
 
 allow npu_upgrade tmpfs:file { open ioctl };
 allow npu_upgrade npu_upgrade:netlink_kobject_uevent_socket { setopt bind create read };
@@ -19,9 +21,12 @@ allow npu_upgrade system_file:file { open read getattr execute execute_no_trans}
 
 allow npu_upgrade usb_device:dir { open read search };
 allow npu_upgrade usb_device:chr_file { open read write ioctl};
-allow npu_upgrade sysfs_bus_usb:dir { open read search};
+allow npu_upgrade sysfs_bus_usb:dir { open read search };
 allow npu_upgrade sysfs_plat_usb:file { open read getattr };
+allow npu_upgrade sysfs_plat_usb:dir { open read getattr search };
 allow npu_upgrade debugfs_clk_wifi_pmu:file { open read write getattr };
 allow npu_upgrade sysfs_class_gpio:file { open read write getattr };
 allow npu_upgrade sysfs_wake_lock:file { open write};
+allow npu_upgrade sysfs:file { open read };
+allow npu_upgrade serial_device:chr_file { open write append };
 
