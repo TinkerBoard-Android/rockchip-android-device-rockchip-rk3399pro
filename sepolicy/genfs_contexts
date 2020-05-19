@@ -66,4 +66,7 @@ genfscon sysfs /devices/platform/pinctrl/gpio/gpio54/value  u:object_r:sysfs_cla
 genfscon sysfs /devices/platform/pinctrl/gpio/gpio55/value  u:object_r:sysfs_class_gpio:s0
 genfscon sysfs /devices/platform/pinctrl/gpio/gpio56/value  u:object_r:sysfs_class_gpio:s0
 
-genfscon sysfs devices/platform/ff9a0000.gpu/power_policy u:object_r:sysfs_gpu_powerpolicy:s0
+genfscon sysfs /devices/platform/ff9a0000.gpu/power_policy u:object_r:sysfs_gpu_powerpolicy:s0
+genfscon sysfs /devices/platform/f8000000.pcie/pcie_deferred u:object_r:sysfs_pcie:s0
+genfscon sysfs /devices/platform/f8000000.pcie/pcie_reset_ep u:object_r:sysfs_pcie:s0
+

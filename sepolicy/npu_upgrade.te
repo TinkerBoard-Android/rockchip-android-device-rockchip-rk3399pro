@@ -29,4 +29,6 @@ allow npu_upgrade sysfs_class_gpio:file { open read write getattr };
 allow npu_upgrade sysfs_wake_lock:file { open write};
 allow npu_upgrade sysfs:file { open read };
 allow npu_upgrade serial_device:chr_file { open write append };
-
+allow npu_upgrade vendor_data_file:file { open write append create };
+allow npu_upgrade vendor_data_file:dir { open write add_name create };
+allow npu_upgrade sysfs_pcie:file { open read write };

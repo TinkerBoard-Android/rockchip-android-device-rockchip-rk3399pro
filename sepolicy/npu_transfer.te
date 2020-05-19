@@ -31,6 +31,7 @@ allow npu_transfer_proxy init:file { open read getattr};
 allow npu_transfer_proxy init:dir { open read search};
 allow npu_transfer_proxy vendor_init:file { open read };
 allow npu_transfer_proxy device:dir { open read };
+allow npu_transfer_proxy pcie_device:chr_file { open read write ioctl };
 allow npu_transfer_proxy socket_device:dir { open read write add_name create remove_name };
 allow npu_transfer_proxy socket_device:sock_file { open read write create unlink setattr };
 allow npu_transfer_proxy npu_powerctrl_exec:file { execute_no_trans };
