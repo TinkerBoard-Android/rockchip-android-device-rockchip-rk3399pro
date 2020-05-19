@@ -4,3 +4,4 @@ type sysfs_plat_usb, sysfs_type, fs_type;
 type sysfs_bus_usb, sysfs_type, fs_type;
 type sysfs_class_gpio, sysfs_type, fs_type;
 type sysfs_gpu_powerpolicy, sysfs_type, fs_type;
+type transfer_proxy_socket, file_type, mlstrustedobject;

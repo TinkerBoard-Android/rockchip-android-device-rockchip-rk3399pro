@@ -13,13 +13,27 @@ allow npu_transfer_proxy init:unix_stream_socket { connectto };
 allow npu_transfer_proxy npu_transfer_proxy:netlink_kobject_uevent_socket { setopt bind create read };
 allow npu_transfer_proxy sysfs_bus_usb:dir { open read search};
 allow npu_transfer_proxy sysfs_plat_usb:file { open read getattr };
+allow npu_transfer_proxy sysfs_plat_usb:dir { open read getattr search };
 
 allow npu_transfer_proxy vendor_file:file { execute_no_trans };
 allow npu_transfer_proxy sysfs_class_gpio:file { open read write};
 allow npu_transfer_proxy debugfs_clk_wifi_pmu:file { open read write};
 allow npu_transfer_proxy sysfs_wake_lock:file { open read write};
 
-# allow npu_transfer_proxy npu_transfer_proxy:capability { dac_override };
-dontaudit npu_transfer_proxy self:capability { dac_override };
-
 allow npu_transfer_proxy npu_transfer_proxy:capability2 { block_suspend };
+
+allow npu_transfer_proxy sysfs_dev:file { open read getattr};
+allow npu_transfer_proxy sysfs_armnn:file { open read getattr};
+allow npu_transfer_proxy sysfs:file { open read getattr};
+allow npu_transfer_proxy kernel:file { open read getattr};
+allow npu_transfer_proxy kernel:dir { open read search};
+allow npu_transfer_proxy init:file { open read getattr};
+allow npu_transfer_proxy init:dir { open read search};
+allow npu_transfer_proxy vendor_init:file { open read };
+allow npu_transfer_proxy device:dir { open read };
+allow npu_transfer_proxy socket_device:dir { open read write add_name create remove_name };
+allow npu_transfer_proxy socket_device:sock_file { open read write create unlink setattr };
+allow npu_transfer_proxy npu_powerctrl_exec:file { execute_no_trans };
+
+get_prop(npu_transfer_proxy,vendor_default_prop);
+file_type_auto_trans(npu_transfer_proxy, socket_device, transfer_proxy_socket);
