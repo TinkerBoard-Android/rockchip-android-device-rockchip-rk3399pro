@@ -202,6 +202,16 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.neuralnetworks</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>ovx</instance>
+            <instance>armnn</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.tv.cec</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -213,3 +223,4 @@
     </hal>
 
 </manifest>
+
