@@ -8,9 +8,6 @@ allow npu_upgrade shell_exec:file { read getattr };
 allow npu_upgrade device:dir { open read };
 allow npu_upgrade npu_upgrade_exec:file { execute_no_trans };
 
-# allow npu_upgrade npu_upgrade:capability { dac_override };
-dontaudit npu_upgrade self:capability { dac_override };
-
 allow npu_upgrade npu_upgrade:capability2 { block_suspend };
 allow npu_upgrade upgrade_tool_exec:file { execute_no_trans };
 allow npu_upgrade npu_powerctrl_exec:file { execute_no_trans };
