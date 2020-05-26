@@ -155,6 +155,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.kernel.android.checkjni=0 \
                 ro.sf.lcd_density=280 \
                 ro.build.shutdown_timeout=6 \
+<<<<<<< HEAD
                 persist.enable_task_snapshots=false \
                 ro.product.version = v1.2.0 \
                 persist.sys.hdmi.cec_enable=true
+=======
+		persist.enable_task_snapshots=false \
+		ro.product.version = v1.3.4
+>>>>>>> asus/rk3399pro_pie_sdk_release_v1.3.4
