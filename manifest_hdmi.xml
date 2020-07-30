@@ -209,7 +209,6 @@
             <name>IRkOutputManager</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IRkOutputManager/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tv.cec</name>
