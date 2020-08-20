@@ -1,138 +1,48 @@
 # debugfs
 genfscon debugfs /clk/clk_wifi_pmu/clk_rate         u:object_r:debugfs_clk_wifi_pmu:s0
 genfscon debugfs /clk/clk_wifi_pmu/clk_enable_count u:object_r:debugfs_clk_wifi_pmu:s0
+genfscon debugfs /clk/rk808-clkout2/clk_enable_count u:object_r:debugfs_clk_wifi_pmu:s0
 
 # sysfs
 genfscon sysfs /bus/usb/devices                       				u:object_r:sysfs_bus_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/1-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/1-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/1-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/1-1/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/1-1/descriptors  		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/busnum  			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/devnum  			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb1/descriptors  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3c0000.usb/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3c0000.usb/usb1/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3c0000.usb/usb2/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3c0000.usb/usb3/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3c0000.usb/usb4/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3c0000.usb/usb5/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3c0000.usb/usb6/		  		u:object_r:sysfs_plat_usb:s0
 
-genfscon sysfs /devices/platform/fe3e0000.usb/usb2/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb2/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb2/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb2/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb2/descriptors  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3a0000.usb/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3a0000.usb/usb1/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3a0000.usb/usb2/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3a0000.usb/usb3/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3a0000.usb/usb4/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3a0000.usb/usb5/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3a0000.usb/usb6/		  		u:object_r:sysfs_plat_usb:s0
 
-genfscon sysfs /devices/platform/fe3e0000.usb/usb4/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb4/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb4/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb4/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb4/descriptors  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe380000.usb/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe380000.usb/usb1/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe380000.usb/usb2/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe380000.usb/usb3/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe380000.usb/usb4/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe380000.usb/usb5/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe380000.usb/usb6/		  		u:object_r:sysfs_plat_usb:s0
 
-genfscon sysfs /devices/platform/fe3e0000.usb/usb6/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb6/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb6/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb6/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3e0000.usb/usb6/descriptors  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3e0000.usb/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3e0000.usb/usb1/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3e0000.usb/usb2/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3e0000.usb/usb3/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3e0000.usb/usb4/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3e0000.usb/usb5/		  		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/fe3e0000.usb/usb6/		  		u:object_r:sysfs_plat_usb:s0
 
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/4-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/4-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/4-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/4-1/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb4/4-1/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/fe3c0000.usb/usb5/5-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb5/5-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb5/5-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb5/5-1/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3c0000.usb/usb5/5-1/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/fe380000.usb/usb5/5-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/5-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/5-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/5-1/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/5-1/descriptors  		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb5/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/fe380000.usb/usb3/3-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/3-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/3-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/3-1/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/3-1/descriptors  		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe380000.usb/usb3/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/fe3a0000.usb/usb5/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb5/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb5/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb5/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb5/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/fe3a0000.usb/usb6/devnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb6/bConfigurationValue 		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb6/busnum   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb6/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/fe3a0000.usb/usb6/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/usb@fe90000.auto/usb3/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe90000.auto/usb3/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe90000.auto/usb3/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe90000.auto/usb3/speed   			u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe90000.auto/usb3/descriptors  		u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/descriptors  		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/1-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/1-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/1-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/1-1/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/1-1/descriptors  	u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/descriptors  		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/2-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/2-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/2-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/2-1/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/2-1/descriptors  	u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/descriptors  		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb3/3-1/descriptors  	u:object_r:sysfs_plat_usb:s0
-
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/descriptors  		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/devnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/bConfigurationValue 	u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/busnum   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/speed   		u:object_r:sysfs_plat_usb:s0
-genfscon sysfs /devices/platform/usb@fe900000/fe900000.dwc3/xhci-hcd.12.auto/usb4/4-1/descriptors  	u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb1/   		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb2/ 		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb3/ 		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb4/ 		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb5/ 		u:object_r:sysfs_plat_usb:s0
+genfscon sysfs /devices/platform/usb1/fe900000.dwc3/xhci-hcd.12.auto/usb6/ 		u:object_r:sysfs_plat_usb:s0
 
 genfscon sysfs /class/gpio/export    u:object_r:sysfs_class_gpio:s0
 genfscon sysfs /class/gpio/unexport  u:object_r:sysfs_class_gpio:s0
@@ -155,4 +65,8 @@ genfscon sysfs /devices/platform/pinctrl/gpio/gpio36/value  u:object_r:sysfs_cla
 genfscon sysfs /devices/platform/pinctrl/gpio/gpio54/value  u:object_r:sysfs_class_gpio:s0
 genfscon sysfs /devices/platform/pinctrl/gpio/gpio55/value  u:object_r:sysfs_class_gpio:s0
 genfscon sysfs /devices/platform/pinctrl/gpio/gpio56/value  u:object_r:sysfs_class_gpio:s0
+
+genfscon sysfs /devices/platform/ff9a0000.gpu/power_policy u:object_r:sysfs_gpu_powerpolicy:s0
+genfscon sysfs /devices/platform/f8000000.pcie/pcie_deferred u:object_r:sysfs_pcie:s0
+genfscon sysfs /devices/platform/f8000000.pcie/pcie_reset_ep u:object_r:sysfs_pcie:s0
 

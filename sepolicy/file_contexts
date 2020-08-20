@@ -5,6 +5,8 @@
 /vendor/bin/npu_upgrade   u:object_r:npu_upgrade_exec:s0
 /vendor/bin/npu_transfer_proxy   u:object_r:npu_transfer_proxy_exec:s0
 /vendor/bin/npu_monitor   u:object_r:npu_monitor_exec:s0
+/vendor/bin/npu_powerctrl   u:object_r:npu_powerctrl_exec:s0
+/dev/socket/transfer_proxy       u:object_r:transfer_proxy_socket:s0
 
 #for androidNN
 /sys/devices/platform/ff690000.efuse/rockchip-efuse0/nvmem u:object_r:sysfs_armnn:s0
